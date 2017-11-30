@@ -32,3 +32,19 @@ class Queue(object):
 			else:
 				self.first = next
 			return data
+
+
+if __name__ == '__main__':
+	q = Queue()
+	print q.dequeue()
+	q.enqueue(1)
+	print q.dequeue()
+	q.enqueue('a')
+	q.enqueue('b')
+	q.enqueue('c')
+	print q.dequeue()
+	q.enqueue('d')
+	print q.dequeue()
+	print q.dequeue()
+	print q.dequeue()
+	print q.dequeue()
